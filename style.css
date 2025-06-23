@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(#001f3f, #001726);
+}
+
+h1, h2, h3, .cta, .form-btn {
+  font-family: "Press Start 2P", monospace;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #ffc600;
+  color: #222;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255,204,0,0.8);
+}
+
+.scroll-arrow {
+  display: block;
+  margin: 40px auto 0;
+  font-size: 1.5rem;
+  animation: bounce 1.5s infinite;
+  width: 24px;
+  height: 24px;
+  color: #ffc600;
+}
+
+@keyframes bounce {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(8px);}
+}
+
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.form-section {
+  background: #0b2942;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ffc600;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.form-btn:hover {
+  opacity: 0.85;
+}
+.story, .features, .cases {
+  padding: 60px 20px;
+  text-align: center;
+}
+.story ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+.story li {
+  margin-bottom: 10px;
+}
+.feature-list, .case-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+.feature, .case {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 260px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #001020;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .feature, .case {
+    width: 100%;
+  }
+  .feature-list, .case-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
